@@ -17,11 +17,11 @@ export default function App() {
             <img src={bgImage} alt=""
                  className='min-w-[1920px] w-dvw h-dvh scale-[1.02] fixed -z-10 tranlate-x-0.5 translate-y-0.5 top-0.5 left-0.5'/>
             <Suspense fallback={<Loader />}>
-                <Main name="main"/>
+                <Main name="ana"/>
             </Suspense>
 
             <Suspense fallback={<Loader />}>
-                <Announcements name="announcements"/>
+                <Announcements name="duyurular"/>
             </Suspense>
         </div>
     )
