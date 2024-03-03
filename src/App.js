@@ -5,9 +5,11 @@ import bgImage from './images/background.png';
 import Navbar from "./Components/Navbar";
 import Socials from "./Components/Socials";
 import Loader from "./Loaders/Loader";
+import Sponsors from "./Pages/Sponsors";
 
 const Main = React.lazy(() => import('./Pages/Main'));
 const Announcements = React.lazy(() => import('./Pages/Announcements'));
+const About = React.lazy(() => import('./Pages/About'));
 
 export default function App() {
     return (
@@ -22,6 +24,14 @@ export default function App() {
 
             <Suspense fallback={<Loader />}>
                 <Announcements name="duyurular"/>
+            </Suspense>
+
+            <Suspense fallback={<Loader />}>
+                <About name="hakkinda"/>
+            </Suspense>
+
+            <Suspense fallback={<Loader />}>
+                <Sponsors name="sponsorlar"/>
             </Suspense>
         </div>
     )
