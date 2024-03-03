@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/bluelmin-benedict');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,8 +17,6 @@
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     font-family: "Montserrat", sans-serif !important;
     color:white;
@@ -27,3 +28,23 @@
     display: none;
 }
 
+.sponsor-title {
+    font-family: "Bluelmin Benedict", sans-serif !important;
+}
+
+.img-after-border {
+    position: relative;
+    display: inline-block;
+}
+
+.img-after-border::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border: 2px solid white;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+    border-radius: 50%;
+}

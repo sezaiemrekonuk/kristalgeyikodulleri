@@ -5,11 +5,11 @@ import bgImage from './images/background.png';
 import Navbar from "./Components/Navbar";
 import Socials from "./Components/Socials";
 import Loader from "./Loaders/Loader";
-import Sponsors from "./Pages/Sponsors";
 
 const Main = React.lazy(() => import('./Pages/Main'));
 const Announcements = React.lazy(() => import('./Pages/Announcements'));
 const About = React.lazy(() => import('./Pages/About'));
+const Sponsors = React.lazy(() => import('./Pages/Sponsors'));
 
 export default function App() {
     return (

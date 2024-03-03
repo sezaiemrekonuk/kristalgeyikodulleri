@@ -4,7 +4,7 @@ import NumberSection from "../Components/About/NumberSection";
 
 const About = (props) => {
     return (
-        <div className={"flex flex-col items-center justify-center min-h-dvh px-24"} id={props.name}>
+        <div className={"flex flex-col items-center justify-center min-h-dvh px-12 lg:px-24 py-24"} id={props.name}>
             <BigHeader>
                 Hakkında
             </BigHeader>
