@@ -5,6 +5,9 @@ import bgImage from './images/background.png';
 import Navbar from "./Components/Navbar";
 import Socials from "./Components/Socials";
 import Loader from "./Loaders/Loader";
+import {SliderEngineering} from "./Pages/SliderEngineering";
+import SliderManagement from "./Pages/SliderManagement";
+import SliderArtCulture from "./Pages/SliderArtCulture";
 
 const Main = React.lazy(() => import('./Pages/Main'));
 const Announcements = React.lazy(() => import('./Pages/Announcements'));
@@ -32,6 +35,18 @@ export default function App() {
 
             <Suspense fallback={<Loader />}>
                 <Sponsors name="sponsorlar"/>
+            </Suspense>
+
+            <Suspense fallback={<Loader />}>
+                <SliderEngineering name="kgo23"/>
+            </Suspense>
+
+            <Suspense fallback={<Loader />}>
+                <SliderManagement name="kgo23"/>
+            </Suspense>
+
+            <Suspense fallback={<Loader />}>
+                <SliderArtCulture name="kgo23"/>
             </Suspense>
         </div>
     )
