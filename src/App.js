@@ -10,10 +10,11 @@ const Main = React.lazy(() => import('./Pages/Main'));
 const Announcements = React.lazy(() => import('./Pages/Announcements'));
 const About = React.lazy(() => import('./Pages/About'));
 const Sponsors = React.lazy(() => import('./Pages/Sponsors'));
-const SliderEngineering = React.lazy(() => import('./Pages/SliderEngineering'))
-const SliderManagement = React.lazy(() => import('./Pages/SliderManagement'))
-const SliderArtCulture = React.lazy(() => import('./Pages/SliderArtCulture'))
-const UsOnMedia = React.lazy(() => import('./Pages/UsOnMedia'))
+const SliderEngineering = React.lazy(() => import('./Pages/SliderEngineering'));
+const SliderManagement = React.lazy(() => import('./Pages/SliderManagement'));
+const SliderArtCulture = React.lazy(() => import('./Pages/SliderArtCulture'));
+const UsOnMedia = React.lazy(() => import('./Pages/UsOnMedia'));
+const FAQ = React.lazy(() => import('./Pages/FAQ'));
 
 export default function App() {
     return (
@@ -52,6 +53,10 @@ export default function App() {
 
             <Suspense fallback={<Loader/>}>
                 <UsOnMedia name={"medyadabiz"}/>
+            </Suspense>
+
+            <Suspense fallback={<Loader/>}>
+                <FAQ name={"sss"}/>
             </Suspense>
         </div>
     )
