@@ -13,7 +13,7 @@ import useMedia from "../../Hooks/useMedia";
 
 import {BottomSheet} from "react-spring-bottom-sheet";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faX} from "@fortawesome/free-solid-svg-icons";
 import {useEffect, useState} from "react";
 
 import 'react-spring-bottom-sheet/dist/style.css'
@@ -63,7 +63,7 @@ const Navbar = (props) => {
                     <div
                         onClick={() => setActive(true)}
                     >
-                        <FontAwesomeIcon icon={faBars}/>
+                        <FontAwesomeIcon icon={active ? faX : faBars} size={'lg'}/>
                     </div>
                     <BottomSheet
                         open={active}
