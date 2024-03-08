@@ -4,7 +4,7 @@ import SponsorImages from "../Components/SponsorImages";
 
 const Sponsors = (props) => {
     return (
-        <div id={props.name} className={"flex items-center justify-center flex-col min-h-dvh pt-20"}>
+        <div id={props.name} className={"flex items-center justify-center flex-col min-h-dvh pt-28"}>
             <BigHeader>
                 Sponsorlar
             </BigHeader>

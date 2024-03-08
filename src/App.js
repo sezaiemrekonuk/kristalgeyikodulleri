@@ -19,34 +19,22 @@ const Contact = React.lazy(() => import('./Pages/Contact'));
 const Communities = React.lazy(() => import('./Pages/Communities'));
 
 export default function App() {
-    const refs = {
-        "ana": React.createRef(),
-        "duyurular": React.createRef(),
-        "hakkinda": React.createRef(),
-        "sponsorlar": React.createRef(),
-        "kgo23": React.createRef(),
-        "topluluklar": React.createRef(),
-        "medyadabiz": React.createRef(),
-        "sss": React.createRef(),
-        "iletisim": React.createRef()
-    }
-
     return (
         <div className={"overflow-hidden"}>
-            <Navbar refs={refs}/>
+            <Navbar/>
             <Socials/>
             <img src={bgImage} alt=""
                  className='min-w-[1920px] w-dvw h-dvh scale-[1.02] fixed -z-10 tranlate-x-0.5 translate-y-0.5 top-0.5 left-0.5'/>
             <Suspense fallback={<Loader/>}>
-                <Main name="ana" ref={refs.ana}/>
+                <Main name="ana"/>
             </Suspense>
 
             <Suspense fallback={<Loader/>}>
-                <Announcements name="duyurular" ref={refs.duyurular}/>
+                <Announcements name="duyurular"/>
             </Suspense>
 
             <Suspense fallback={<Loader/>}>
-                <About name="hakkinda" ref={refs.hakkinda}/>
+                <About name="hakkinda"/>
             </Suspense>
 
             <Suspense fallback={<Loader/>}>
@@ -58,11 +46,11 @@ export default function App() {
             </Suspense>
 
             <Suspense fallback={<Loader/>}>
-                <SliderManagement name="kgo23"/>
+                <SliderManagement name=""/>
             </Suspense>
 
             <Suspense fallback={<Loader/>}>
-                <SliderArtCulture name="kgo23"/>
+                <SliderArtCulture name=""/>
             </Suspense>
 
             <Suspense fallback={<Loader/>}>

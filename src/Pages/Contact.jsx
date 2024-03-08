@@ -5,7 +5,7 @@ import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
 
 export default function Contact(props) {
     return (
-        <div id={props.name} className={"flex justify-center items-center flex-col min-h-dvh pt-20 md:mx-28 gap-14 md:gap-32"}>
+        <div id={props.name} className={"flex justify-center items-center flex-col min-h-dvh pt-28 md:mx-28 gap-14 md:gap-32"}>
             <BigHeader>
                 İletişim
             </BigHeader>
@@ -39,7 +39,7 @@ export default function Contact(props) {
                 <p className={"text-xl hidden md:inline-block"}>
                     Kristal Geyik Ödülleri 2024
                 </p>
-                <img src="/images/logo.png" alt="kristal geyik odulleri"/>
+                <img src="/images/logo.png" alt="kristal geyik odulleri" className={"h-16 md:h-20"}/>
                 <p className='text-lg tracking-[.16rem] hidden md:inline-block'>#senin<b>secimin</b></p>
             </div>
         </div>
