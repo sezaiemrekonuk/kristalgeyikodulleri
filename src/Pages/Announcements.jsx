@@ -5,7 +5,7 @@ import Announcement from "../Components/Announcements/Announcement";
 
 const Announcements = (props) => {
     return (
-        <div id={props.name} className={'flex items-center justify-center flex-col min-h-dvh md:gap-y-16 lg:px-24 pt-20 md:pt-24 p-4'}>
+        <div id={props.name} ref={props.ref} className={'flex items-center justify-center flex-col min-h-dvh md:gap-y-16 lg:px-24 pt-20 md:pt-24 p-4'}>
             <BigHeader>
                 Duyurular
             </BigHeader>

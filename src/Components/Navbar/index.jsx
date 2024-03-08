@@ -11,11 +11,15 @@ import logo from '../../images/logo.png';
 import {NAVBAR_ITEMS} from "../../Constants/Navbar";
 // "itemname": "itemid"
 const Navbar = (props) => {
+    const onClickScroll = (item) => {
+        const element = document.getElementById(item.replace('#', ''));
+        element.scrollIntoView({behavior: "smooth"});
+    }
 
     return (
         <div
             className="flex flex-row fixed top-0 left-0 w-full h-20 bg-transparent z-50 justify-between items-center px-10">
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row items-center justify-center hover:cursor-pointer" onClick={() => onClickScroll('ana')}>
                 <img src={logo} alt="logo" className="h-14"/>
             </div>
             <div className="">
@@ -27,7 +31,9 @@ const Navbar = (props) => {
                     Object.keys(NAVBAR_ITEMS).map((item, index) => {
                         return (
                             <div key={index} className="flex flex-row items-center hover:cursor-pointer">
-                                <a href={NAVBAR_ITEMS[item]} className="tracking-[.12rem] hover:tracking-[.16rem] transition-all">{item}</a>
+                                <button className="tracking-[.12rem] hover:tracking-[.16rem] transition-all"
+                                onClick={() => onClickScroll(NAVBAR_ITEMS[item])}
+                                >{item}</button>
                             </div>
                         )
                     }
