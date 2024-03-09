@@ -6,6 +6,7 @@ import bgVideo from './images/backgroundvideo.mp4';
 import Navbar from "./Components/Navbar";
 import Socials from "./Components/Socials";
 import Loader from "./Loaders/Loader";
+import FullScreenLoader from "./Components/FullScreenLoader";
 
 const Main = React.lazy(() => import('./Pages/Main'));
 const Announcements = React.lazy(() => import('./Pages/Announcements'));
@@ -21,13 +22,17 @@ const Communities = React.lazy(() => import('./Pages/Communities'));
 
 export default function App() {
     const [background, setBackground] = React.useState(false);
+    const [loading, setLoading] = React.useState(true);
 
     const getScreenWidth = () => {
         return window.innerWidth;
     }
 
     useEffect(() => {
-
+        setTimeout(() => {
+                setLoading(false);
+            }
+            , 3000);
         window.addEventListener('scroll', () => {
                 const scrollY = window.scrollY;
                 if (scrollY === 0) {
@@ -46,6 +51,9 @@ export default function App() {
 
     return (
         <div className={"overflow-hidden"}>
+
+            {loading && <FullScreenLoader/>}
+
             <Navbar/>
             <Socials/>
 
@@ -60,7 +68,7 @@ export default function App() {
 
 
             <div className={"fixed -z-20 flex items-center justify-center scale-[1.02] "}>
-                <img src={bgImage} alt="background" className={"min-w-[1920px] object-cover"}/>
+                <img src={bgImage} alt="background" className={"min-w-[1920px] object-cover min-h-[1080px]"}/>
             </div>
 
             <Suspense fallback={<Loader/>}>
