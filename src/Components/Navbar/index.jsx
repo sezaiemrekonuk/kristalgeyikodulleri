@@ -51,7 +51,7 @@ const Navbar = (props) => {
             className={"flex flex-row fixed top-0 left-0 w-full h-20 z-40 justify-between items-center px-10 transition-all duration-500 " + background}>
             <div className="flex flex-row items-center justify-center hover:cursor-pointer"
                  onClick={() => onClickScroll('ana')}>
-                <img src={logo} alt="logo" className="h-[45px] min-w-[180px]"/>
+                <img src={logo} alt="logo" className="h-[35px] md:h-[45px] min-w-[180px]"/>
             </div>
             {!media && (
                 <div className="-ml-4">

@@ -68,7 +68,7 @@ export default function App() {
 
 
             <div className={"fixed -z-20 flex items-center justify-center object-contain"}>
-                <img src={bgImage} alt="background" className={"h-dvh min-w-[1920px] md:min-w-0"}/>
+                <img src={bgImage} alt="background" className={"h-dvh min-w-[1920px]"}/>
             </div>
 
             <Suspense fallback={<Loader/>}>
