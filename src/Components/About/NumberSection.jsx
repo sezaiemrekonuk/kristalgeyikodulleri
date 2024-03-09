@@ -25,7 +25,7 @@ const NumberSection = () => {
 
     return isVisible && (
         <div
-            className={"flex flex-col lg:flex-row flex-wrap gap-4 items-center justify-between w-2/3 mx-40 mt-10 border-white border bg-white bg-opacity-70 p-12"}>
+            className={"flex flex-col lg:flex-row flex-wrap gap-4 items-center justify-center md:justify-between md:w-2/3 md:mx-40 mt-10 border-white border bg-white bg-opacity-70 p-12"}>
             <IncreasingNumberComponent value={40000} title={"OY"}/>
             <IncreasingNumberComponent value={5000} title={"ÖĞRENCİ"}/>
             <IncreasingNumberComponent value={1500} title={"ADAY"}/>
