@@ -8,7 +8,7 @@ export const SliderArtCulture = (props) => {
                 <BigHeader>
                     KGÖ'23
                 </BigHeader>
-                <h2 className={"sponsor-title text-4xl mb-4"}>Kültür-Sanat Kazananları</h2>
+                <h2 className={"sponsor-title text-4xl my-2 mt-6"}>Kültür-Sanat Kazananları</h2>
             </div>
 
             <CustomSlider/>
