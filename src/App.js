@@ -61,14 +61,14 @@ export default function App() {
                 className={"fixed -z-10 flex items-center justify-center scale-[1.02] transition-all duration-500 ease-in-out "
                     + (background ? "opacity-100" : "opacity-0")
                 }>
-                <video autoPlay loop muted playsInline className={"w-[1300px] h-dvh md:w-dvw opacity-75"}>
+                <video autoPlay loop muted playsInline className={"min-w-[1920px] min-h-dvh opacity-75"} poster={bgImage}>
                     <source src={bgVideo} type="video/mp4"/>
                 </video>
             </div>
 
 
             <div className={"fixed -z-20 flex items-center justify-center object-contain"}>
-                <img src={bgImage} alt="background" className={"w-[1300px] h-dvh md:w-dvw"}/>
+                <img src={bgImage} alt="background" className={"h-dvh min-w-[1920px] md:min-w-0"}/>
             </div>
 
             <Suspense fallback={<Loader/>}>
