@@ -35,7 +35,7 @@ export default function Contact(props) {
                     </p>
                 </div>
             </div>
-            <div className={"flex flex-row items-center justify-between w-full md:mt-auto mb-4 md:pe-20"}>
+            <div className={"flex flex-row items-center justify-center md:justify-between w-full md:mt-auto mb-4 md:pe-20"}>
                 <p className={"text-lg hidden md:inline-block"}>
                     Kristal Geyik Ödülleri 2024
                 </p>

@@ -25,3 +25,12 @@
     right: 0;
     height: 25px;
 }
+
+@media screen and (max-width: 768px){
+    .custom-border::after {
+        height: 15px;
+    }
+    .custom-border::before {
+        height: 15px;
+    }
+}
