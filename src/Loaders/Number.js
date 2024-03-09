@@ -14,7 +14,7 @@ export default function Number({value, ...props}) {
 
     return (
         <div {...props}>
-            <animated.span>
+            <animated.span className={"text-rose-800"}>
                 {number.to(n => n.toFixed(0))}
             </animated.span>
             +

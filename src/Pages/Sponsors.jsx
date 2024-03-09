@@ -6,7 +6,7 @@ const Sponsors = (props) => {
     return (
         <div id={props.name} className={"flex items-center justify-center flex-col min-h-dvh pt-28"}>
             <BigHeader>
-                Sponsorlar
+                KGÖ'23 Sponsorlarımız
             </BigHeader>
                 {sponsors.map((sponsor, index) => {
                     return (

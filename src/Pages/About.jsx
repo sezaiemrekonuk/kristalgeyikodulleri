@@ -25,7 +25,7 @@ const About = (props) => {
                 obcaecati officiis pariatur. Facere fugiat maiores minima natus optio sint tempore! Adipisci commodi
                 cum, earum fugiat illo iste nihil possimus praesentium qui quia quo saepe sequi?
             </p>
-            <NumberSection/>
+            <NumberSection />
         </div>
     )
 }
