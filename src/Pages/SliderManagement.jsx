@@ -8,7 +8,7 @@ export const SliderManagement = (props) => {
                 <BigHeader>
                     KGÖ'23
                 </BigHeader>
-                <h2 className={"sponsor-title text-4xl mb-4"}>Yonetim Finans Kazananlari</h2>
+                <h2 className={"sponsor-title text-4xl mb-4"}>Yönetim Finans Kazananları</h2>
             </div>
 
             <CustomSlider/>

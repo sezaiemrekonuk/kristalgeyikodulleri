@@ -8,7 +8,7 @@ const SliderEngineering = (props) => {
                 <BigHeader>
                     KGÖ'23
                 </BigHeader>
-                <h2 className={"sponsor-title text-4xl mb-4"}>Muhendislik Kazananlari</h2>
+                <h2 className={"sponsor-title text-4xl mb-4"}>Mühendislik Kazananları</h2>
             </div>
 
             <CustomSlider/>

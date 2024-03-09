@@ -13,11 +13,11 @@ const NAVBAR_ITEMS = {
 }
 
 const SOCIALS = {
-    "instagram": {link: "#", icon: "instagram"},
-    "twitter": {link: "#", icon: "twitter"},
-    "linkedin": {link: "#", icon: "linkedin"},
-    "facebook": {link: "#", icon: "facebook"},
-    "youtube": {link: "#", icon: "youtube"},
+    "instagram": {link: "https://www.instagram.com/kristalgeyikodulleri", icon: "instagram"},
+    "twitter": {link: "https://www.twitter.com/KristalGeyik/", icon: "twitter"},
+    "linkedin": {link: "https://www.linkedin.com/company/kristalgeyik/", icon: "linkedin"},
+    "facebook": {link: "https://www.facebook.com/kristalgeyikodulleri/", icon: "facebook"},
+    "youtube": {link: "https://www.youtube.com/KristalGeyikOdulleri", icon: "youtube"},
 }
 
 export { NAVBAR_ITEMS, SOCIALS }

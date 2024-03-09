@@ -27,6 +27,7 @@ export default function App() {
     }
 
     useEffect(() => {
+
         window.addEventListener('scroll', () => {
                 const scrollY = window.scrollY;
                 if (scrollY === 0) {
@@ -36,17 +37,23 @@ export default function App() {
                 }
             }
         )
-    }, [])
+
+        if (window.scrollY === 0) {
+            setBackground(true);
+        }
+    }, []);
+
 
     return (
         <div className={"overflow-hidden"}>
             <Navbar/>
             <Socials/>
 
-            <div className={"fixed -z-10 flex items-center justify-center scale-[1.02] transition-all duration-500 ease-in-out "
-            + (background ? "opacity-100" : "opacity-0")
-            }>
-                <video autoPlay loop muted playsInline className={"min-w-[1920px] opacity-60"}>
+            <div
+                className={"fixed -z-10 flex items-center justify-center scale-[1.02] transition-all duration-500 ease-in-out "
+                    + (background ? "opacity-100" : "opacity-0")
+                }>
+                <video autoPlay loop muted playsInline className={"min-w-[1920px] opacity-75"}>
                     <source src={bgVideo} type="video/mp4"/>
                 </video>
             </div>
@@ -100,5 +107,5 @@ export default function App() {
                 <Contact name={"iletisim"}/>
             </Suspense>
         </div>
-    )
+    );
 }

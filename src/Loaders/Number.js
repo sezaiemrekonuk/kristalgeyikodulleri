@@ -8,7 +8,7 @@ export default function Number({value, ...props}) {
         config: {
             mass: 1,
             tension: 10,
-            friction: 25
+            friction: 7
         }
     });
 

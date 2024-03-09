@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/bluelmin-benedict');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -29,7 +29,9 @@
 }
 
 .sponsor-title {
-    font-family: "Bluelmin Benedict", sans-serif !important;
+    font-family: "Whisper", cursive !important;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .img-after-border {

@@ -35,11 +35,11 @@ export default function Contact(props) {
                     </p>
                 </div>
             </div>
-            <div className={"flex flex-row items-center justify-evenly w-full md:mt-auto"}>
-                <p className={"text-xl hidden md:inline-block"}>
+            <div className={"flex flex-row items-center justify-between w-full md:mt-auto mb-4 md:pe-20"}>
+                <p className={"text-lg hidden md:inline-block"}>
                     Kristal Geyik Ödülleri 2024
                 </p>
-                <img src="/images/logo.png" alt="kristal geyik odulleri" className={"h-16 md:h-20"}/>
+                <img src="/images/logo.png" alt="kristal geyik odulleri" className={"h-10 md:h-12"}/>
                 <p className='text-lg tracking-[.16rem] hidden md:inline-block'>#senin<b>secimin</b></p>
             </div>
         </div>

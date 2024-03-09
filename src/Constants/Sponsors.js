@@ -1,6 +1,6 @@
 const sponsors = [
     {
-        title: "Altin Sponsorlar",
+        title: "Altın Sponsorlar",
         file: 'gold',
         sponsors: [
             'hmbrgr',
@@ -11,7 +11,7 @@ const sponsors = [
         ]
     },
     {
-        title: "Gumus Sponsorlar",
+        title: "Gümüş Sponsorlar",
         file: 'silver',
         sponsors: [
             'alstom',
@@ -23,7 +23,7 @@ const sponsors = [
         ]
     },
     {
-        title: "Ulasim Sponsoru",
+        title: "Ulaşım Sponsoru",
         file: 'transport',
         sponsors: [
             'zipcar'
@@ -37,7 +37,7 @@ const sponsors = [
         ]
     },
     {
-        title: "Destek Sponsorlari",
+        title: "Destek Sponsorları",
         file: 'support',
         sponsors: [
             'a101',
