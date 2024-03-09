@@ -1,7 +1,8 @@
-import React, {Suspense} from "react";
+import React, {Suspense, useEffect} from "react";
 
 
 import bgImage from './images/background.png';
+import bgVideo from './images/backgroundvideo.mp4';
 import Navbar from "./Components/Navbar";
 import Socials from "./Components/Socials";
 import Loader from "./Loaders/Loader";
@@ -19,12 +20,42 @@ const Contact = React.lazy(() => import('./Pages/Contact'));
 const Communities = React.lazy(() => import('./Pages/Communities'));
 
 export default function App() {
+    const [background, setBackground] = React.useState(false);
+
+    const getScreenWidth = () => {
+        return window.innerWidth;
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+                const scrollY = window.scrollY;
+                if (scrollY === 0) {
+                    setBackground(true);
+                } else if (scrollY > 0 && scrollY > getScreenWidth() / 2) {
+                    setBackground(false);
+                }
+            }
+        )
+    }, [])
+
     return (
         <div className={"overflow-hidden"}>
             <Navbar/>
             <Socials/>
-            <img src={bgImage} alt=""
-                 className='min-w-[1920px] w-dvw h-dvh scale-[1.02] fixed -z-10 tranlate-x-0.5 translate-y-0.5 top-0.5 left-0.5'/>
+
+            <div className={"fixed -z-10 flex items-center justify-center scale-[1.02] transition-all duration-500 ease-in-out "
+            + (background ? "opacity-100" : "opacity-0")
+            }>
+                <video autoPlay loop muted playsInline className={"min-w-[1920px] opacity-60"}>
+                    <source src={bgVideo} type="video/mp4"/>
+                </video>
+            </div>
+
+
+            <div className={"fixed -z-20 flex items-center justify-center scale-[1.02] "}>
+                <img src={bgImage} alt="background" className={"min-w-[1920px] object-cover"}/>
+            </div>
+
             <Suspense fallback={<Loader/>}>
                 <Main name="ana"/>
             </Suspense>
