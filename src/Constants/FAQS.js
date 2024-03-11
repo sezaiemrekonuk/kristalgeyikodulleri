@@ -1,6 +1,6 @@
 const FAQS = [
     {
-        title: "Kristal keyik ödüllerinin amacı nedir?",
+        title: "Kristal geyik ödüllerinin amacı nedir?",
         content: "Kristal Geyik Ödülleri, Hacettepe Üniversitesi öğrencilerinin oyları doğrultusunda alanında başarılı ünlü isimleri ve şirketleri ödüllendirmek amacıyla kurulmuş bir organizasyondur."
     },
     {
