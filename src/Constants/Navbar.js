@@ -16,7 +16,6 @@ const SOCIALS = {
     "instagram": {link: "https://www.instagram.com/kristalgeyikodulleri", icon: "instagram"},
     "twitter": {link: "https://www.twitter.com/KristalGeyik/", icon: "twitter"},
     "linkedin": {link: "https://www.linkedin.com/company/kristalgeyik/", icon: "linkedin"},
-    "facebook": {link: "https://www.facebook.com/kristalgeyikodulleri/", icon: "facebook"},
     "youtube": {link: "https://www.youtube.com/KristalGeyikOdulleri", icon: "youtube"},
 }
 
