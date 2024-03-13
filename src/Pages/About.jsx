@@ -6,7 +6,7 @@ const About = (props) => {
     return (
         <div className={"flex flex-col items-center justify-center min-h-dvh px-12 lg:px-24 py-24"} id={props.name}>
             <BigHeader>
-                Hakkında
+                Hakkımızda
             </BigHeader>
             <p className={"mt-4 flex flex-col gap-6"}>
                 <p>
