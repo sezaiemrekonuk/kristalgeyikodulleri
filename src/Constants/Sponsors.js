@@ -8,7 +8,8 @@ const sponsors = [
             'pastel',
             'roketsan',
             'kayen'
-        ]
+        ],
+        customWidth: "w-11/12"
     },
     {
         title: "Gümüş Sponsorlar",
@@ -20,7 +21,9 @@ const sponsors = [
             'savdi',
             'taspinar',
             'terra'
-        ]
+        ],
+        customWidth: "w-11/12"
+
     },
     {
         title: "Ulaşım Sponsoru",
@@ -43,14 +46,18 @@ const sponsors = [
             'a101',
             'altinyildiz',
             'koton'
-        ]
+        ],
+        customWidth: "w-11/12"
+
     },
     {
         title: "Medya Sponsoru",
         file: 'media',
         sponsors: [
             'ankaramezuniyet'
-        ]
+        ],
+        customWidth: "w-11/12"
+
     }
 ]
 

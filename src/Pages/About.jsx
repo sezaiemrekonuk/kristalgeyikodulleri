@@ -8,24 +8,36 @@ const About = (props) => {
             <BigHeader>
                 Hakkında
             </BigHeader>
-            <p className={"mt-4"}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolor dolorem eius esse, et
-                exercitationem facere iusto labore molestiae non pariatur placeat quae quia quo ratione rerum sed
-                temporibus, voluptatum! Asperiores aspernatur assumenda at atque beatae corporis culpa debitis delectus
-                enim eos fuga fugit ipsa ipsam iusto laudantium, magnam maiores modi necessitatibus non omnis
-                praesentium quia quibusdam quod rem repellat sed ut vitae! Exercitationem facilis illo ipsum.
-                Accusantium, animi consectetur dolor eveniet excepturi nam obcaecati, quibusdam quod ratione recusandae
-                sint tempora voluptates voluptatum. Amet corporis delectus dicta, ea eaque eos, expedita hic inventore
-                labore non perspiciatis placeat reprehenderit sapiente, vero voluptatum. Aliquam culpa delectus, dolor
-                ducimus, eaque fuga maxime mollitia nesciunt nisi obcaecati placeat quia repellat repellendus soluta
-                sunt vel vitae voluptas. Ad amet atque dignissimos dolore dolorem dolores dolorum exercitationem
-                expedita fuga fugit illum ipsa iste laboriosam laudantium libero magni minima non nulla, odit omnis
-                optio pariatur quam quasi recusandae repudiandae sed, suscipit tempora. Amet consequatur culpa dolore et
-                illum, iste possimus quas sapiente vel voluptate. Adipisci aliquam autem eaque fugit molestias nobis
-                obcaecati officiis pariatur. Facere fugiat maiores minima natus optio sint tempore! Adipisci commodi
-                cum, earum fugiat illo iste nihil possimus praesentium qui quia quo saepe sequi?
+            <p className={"mt-4 flex flex-col gap-6"}>
+                <p>
+                    Hacettepe Üniversitesi, ilk kez 2018 yılında, Hacettepe
+                    Üniversitesi öğrencilerinin kullandıkları oylar sonucunda
+                    sektördeki en başarılı şirket veya kişileri seçip; bu şirket
+                    veya kişileri Hacettepe Üniversitesi öğrencileriyle bir
+                    araya getirmek amacıyla "Kristal Geyik Ödülleri"
+                    etkinliğini organize etmiştir. 2024 yılında altıncı kez
+                    gerçekleşecek olan bu etkinlik yenilikçi, gelişmeye açık
+                    ve interaktif olmasından ötürü öğrenciler tarafından
+                    büyük bir ilgi görmenin yanı sıra seneler geçtikçe
+                    katılımın arttığı başarılı kişiler ve köklü şirket sayısı ile de
+                    basında ve Türkiye genelinde de görünürlük açısından
+                    ilerleme kaydetmiştir.
+                </p>
+                <p>
+                    Etkinliğin Hacettepe Üniversitesi’nin büyük desteğiyle
+                    Öğrenci Temsilciler Konseyi ve Hacettepe
+                    Üniversitesi'nin önde gelen 6 büyük öğrenci topluluğu (ACM Hacettepe Öğrenci Topluluğu, Genç
+                    Mühendisler Topluluğu, Hacettepe Ekonomi Topluluğu, Hacettepe Endüstri ve Sistem Topluluğu,
+                    Hacettepe Kültür Sanat Topluluğu ve Hacettepe Otomotiv Topluluğu) ile
+                    iş birliği yapılarak düzenlemesi kararı alınmıştır.
+                    Üniversitemizin ve organizasyon komitemizin vizyonları
+                    doğrultusunda ülkemizin başarılı kişilerinin ve köklü
+                    şirketlerinin katılımı ile büyük önem arz eden "Kristal
+                    Geyik Ödülleri" etkinliği Hacettepe Üniversitesi Tunçalp
+                    Özgen Kongre ve Kültür Merkezi’nde gerçekleştirilecektir.
+                </p>
             </p>
-            <NumberSection />
+            <NumberSection/>
         </div>
     )
 }

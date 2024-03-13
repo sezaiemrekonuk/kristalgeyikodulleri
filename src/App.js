@@ -2,7 +2,7 @@ import React, {Suspense, useEffect} from "react";
 
 
 import bgImage from './images/background.png';
-import bgVideo from './images/backgroundvideo.mp4';
+import bgVideo from './images/backgroundvideo.webm';
 import Navbar from "./Components/Navbar";
 import Socials from "./Components/Socials";
 import Loader from "./Loaders/Loader";
@@ -58,11 +58,11 @@ export default function App() {
             <Socials/>
 
             <div
-                className={"fixed -z-10 flex items-center justify-center scale-[1.02] transition-all duration-500 ease-in-out "
+                className={"fixed -z-10 flex items-center justify-center transition-all duration-500 ease-in-out h-screen w-screen "
                     + (background ? "opacity-100" : "opacity-0")
                 }>
-                <video autoPlay loop muted playsInline className={"min-w-[1920px] min-h-dvh opacity-75"} poster={bgImage}>
-                    <source src={bgVideo} type="video/mp4"/>
+                <video autoPlay loop muted playsInline className={"object-cover h-full w-full"} poster={bgImage}>
+                    <source src={bgVideo} type="video/webm"/>
                 </video>
             </div>
 
