@@ -37,7 +37,7 @@ export default function App() {
                 const scrollY = window.scrollY;
                 if (scrollY === 0) {
                     setBackground(true);
-                } else if (scrollY > 0 && scrollY > getScreenWidth() / 2) {
+                } else if (scrollY > 0 && scrollY > getScreenWidth() / 4) {
                     setBackground(false);
                 }
             }
@@ -80,7 +80,7 @@ export default function App() {
             </Suspense>
 
             <Suspense fallback={<Loader/>}>
-                <About name="hakkinda"/>
+                <About name="hakkimizda"/>
             </Suspense>
 
             <Suspense fallback={<Loader/>}>

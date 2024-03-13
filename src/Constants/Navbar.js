@@ -4,6 +4,7 @@
 const NAVBAR_ITEMS = {
     "Duyurular": "#duyurular",
     "Hakkımızda": "#hakkimizda",
+    "Hikayemiz": "#hikayemiz",
     "Sponsorlarımız": "#sponsorlar",
     "KGÖ'23": "#kgo23",
     "Paydaşlarımız": "#topluluklar",

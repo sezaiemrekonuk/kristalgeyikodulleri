@@ -1,5 +1,4 @@
 import BigHeader from "../Components/Headers/BigHeader";
-import Number from "../Loaders/Number";
 import NumberSection from "../Components/About/NumberSection";
 
 const About = (props) => {

@@ -55,7 +55,7 @@ const Navbar = (props) => {
             </div>
             {!media && (
                 <div className="-ml-4">
-                    <p className='text-lg tracking-[.16rem]'>#senin<b>secimin</b></p>
+                    <p className='text-sm 2xl:text-lg tracking-[.16rem]'>#senin<b>secimin</b></p>
                 </div>
             )}
             {media ? (
@@ -94,7 +94,7 @@ const Navbar = (props) => {
                         Object.keys(NAVBAR_ITEMS).map((item, index) => {
                                 return (
                                     <div key={index} className="flex flex-row items-center hover:cursor-pointer">
-                                        <button className="tracking-[.12rem] hover:tracking-[.16rem] transition-all"
+                                        <button className="tracking-[.12rem] hover:tracking-[.16rem] transition-all text-[14px]"
                                                 onClick={() => onClickScroll(NAVBAR_ITEMS[item])}
                                         >{item}</button>
                                     </div>

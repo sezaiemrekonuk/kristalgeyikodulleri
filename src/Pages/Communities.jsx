@@ -3,15 +3,15 @@ import COMMUNITIES_LIST from "../Constants/Communities";
 
 const Communities = (props) => {
     return (
-        <div id={props.name} className={"flex justify-center items-center flex-col min-h-dvh pt-20 md:mx-28 mx-10 gap-y-10 md:gap-y-32"}>
+        <div id={props.name} className={"flex justify-center items-center flex-col min-h-dvh px-10 md:px-44 pt-20 gap-y-10 md:gap-y-12 "}>
             <BigHeader>
                 Paydaşlarımız
             </BigHeader>
 
-            <div className={"flex flex-row items-center justify-center gap-4 md:my-12 flex-wrap border p-12 bg-white bg-opacity-70"}>
+            <div className={"flex flex-row items-center justify-center gap-4 md:my-12 flex-wrap"}>
                 {COMMUNITIES_LIST.map((community, key) => (
                     <div key={key} className={"p-3"}>
-                        <img src={`/images/communitylogos/${community.img}`} alt={community.title} className={"w-[200px] h-[200px] bg-white rounded-lg p-2 shadow-lg"}/>
+                        <img src={`/images/communitylogos/${community.img}`} alt={community.title} className={"w-[175px] h-[175px] bg-white bg-opacity-80 rounded-2xl p-2 shadow-xl"}/>
                     </div>
                 ))}
             </div>
