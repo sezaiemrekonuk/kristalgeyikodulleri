@@ -11,7 +11,7 @@ export const SliderArtCulture = (props) => {
                 {/*<h2 className={"sponsor-title text-4xl my-2 mt-6"}>Kültür-Sanat Kazananları</h2>*/}
             </div>
 
-            <CustomSlider/>
+            <CustomSlider prefix={"kultursanat"} length={[0,1,2,3,4,5,6,7,8,9,10]}/>
         </div>
     )
 }

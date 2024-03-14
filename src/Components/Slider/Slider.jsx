@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 
-const CustomSlider = () => {
+const CustomSlider = ({prefix, length}) => {
     let settings = {
         dots: true,
         infinite: true,
@@ -29,17 +29,13 @@ const CustomSlider = () => {
     };
     return (
         <Slider {...settings}>
-            <div className={"px-2"}>
-                <img src="https://via.placeholder.com/800x800" alt="Slider 1"/>
-            </div>
-            <div className={"px-2"}>
-
-                <img src="https://via.placeholder.com/800x800" alt="Slider 1"/>
-            </div>
-            <div className={"px-2"}>
-
-                <img src="https://via.placeholder.com/800x800" alt="Slider 1"/>
-            </div>
+            {
+                length?.map((path, key) => {
+                    return (
+                        <img src={`/images/${prefix}/${path}.png`} alt={prefix} className={"w-full h-full object-cover p-2"}/>
+                    )
+                })
+            }
         </Slider>
     );
 

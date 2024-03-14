@@ -10,7 +10,7 @@ const SliderEngineering = (props) => {
                 </BigHeader>
             </div>
 
-            <CustomSlider/>
+            <CustomSlider prefix={"muhendislik"} length={[0,1,2,3,4,5,6,7,8,9]}/>
         </div>
     )
 }
