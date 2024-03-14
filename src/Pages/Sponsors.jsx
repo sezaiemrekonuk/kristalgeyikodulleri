@@ -6,7 +6,7 @@ const Sponsors = (props) => {
     return (
         <div id={props.name} className={"flex items-center justify-center min-h-dvh pt-28 flex-col"}>
             <BigHeader>
-                KGÖ'23 Sponsorlarımız
+                Sponsorlarımız'23
             </BigHeader>
             <div className={"flex flex-wrap items-center justify-center"}>
                 {sponsors.map((sponsor, index) => {
