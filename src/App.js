@@ -72,7 +72,7 @@ export default function App() {
             </div>
 
             <Suspense fallback={<Loader/>}>
-                <Main name="ana"/>
+                <Main name="ana" counter isLoaded={loading}/>
             </Suspense>
 
             <Suspense fallback={<Loader/>}>

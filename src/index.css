@@ -50,3 +50,83 @@
     z-index: -1;
     border-radius: 50%;
 }
+
+@keyframes smooth-appear {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+
+    to { opacity: .9 }
+}
+
+.smooth-appear {
+    animation-duration: 1.3s;
+    animation-fill-mode: both;
+    animation-name: smooth-appear;
+    animation-timing-function: ease;
+}
+
+@keyframes smooth-border {
+    from {
+        transform: translateX(-600px);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    80% {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(600px);
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+        height: 100%;
+    }
+
+    80% {
+        opacity: .8;
+        height: 100%;
+    }
+
+
+    99% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+        height: 1px;
+    }
+
+}
+
+.disappear {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-name: disappear;
+    animation-timing-function: ease;
+}
+
+.smooth-border::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border: 2px solid white;
+    top: 40px;
+    left: 0;
+    z-index: -1;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-name: smooth-border;
+}
