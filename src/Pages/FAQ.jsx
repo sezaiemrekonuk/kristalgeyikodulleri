@@ -19,8 +19,8 @@ const FAQ = (props) => {
 
             <Accordion className={"md:w-3/4 flex flex-col items-center justify-center gap-4 mt-6"} allowZeroExpanded>
                 {FAQS.map((faq, key) => (
-                    <AccordionItem key={key} className={"p-3 bg-gray-500 bg-opacity-40 border border-white w-full transition-all rounded-xl"}
-                                   activeClassName={"p-3 bg-gray-800 bg-opacity-90 border-2 border-white w-full font-extrabold text-2xl transition-all rounded"}>
+                    <AccordionItem key={key} className={"p-3 bg-gray-500 bg-opacity-40 border border-white w-full transition-all rounded-xl duration-500"}
+                                   activeClassName={"p-3 bg-gray-800 bg-opacity-90 border-2 border-white w-full font-extrabold text-2xl transition-all rounded duration-500"}>
                         <AccordionItemHeading className={"py-2"}>
                             <AccordionItemButton>
                                 {faq.title}
