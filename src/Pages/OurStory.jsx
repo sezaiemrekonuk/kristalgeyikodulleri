@@ -11,13 +11,13 @@ export default function OurStory(props) {
                     HİKAYEMİZ
                 </BigHeader>
 
-                <div className={"flex flex-row w-full items-center justify-center flex-wrap mt-auto"}>
-                    <div className={"h-[500px] overflow-hidden md:w-2/5"}>
+                <div className={"flex flex-row w-full items-center justify-center flex-wrap h-full"}>
+                    <div className={"overflow-hidden md:overflow-visible md:w-2/5"}>
                         <img src={awardImage} alt="" className={"scale-150"}/>
                     </div>
 
                     <div
-                        className={"mt-4 flex flex-col gap-6 md:w-3/5 h-[500px] items-center justify-center left-border relative px-4"}>
+                        className={"mt-4 flex flex-col gap-6 md:w-3/5  items-center justify-center left-border relative px-4"}>
                         <p>
                             Geyikler, doğanın sonsuz döngüsünün kudretli sembolüdür ve boynuzları ise sonsuzluğun,
                             yenilenmenin,

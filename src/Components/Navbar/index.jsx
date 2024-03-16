@@ -35,7 +35,7 @@ const Navbar = ({transparent = false}) => {
 
     return (
         <div
-            className={`flex flex-row w-full h-20 z-40 justify-between items-center px-10 transition-all duration-500 ease-in-out ${transparent ? 'bg-transparent' : 'bg-[#4A0700]'}`}>
+            className={`flex flex-row w-full fixed  h-20 z-40 justify-between items-center px-10 transition-all duration-500 ease-in-out ${transparent ? 'bg-transparent' : 'bg-[#4A0700]'}`}>
             <div className="flex flex-row items-center justify-center hover:cursor-pointer"
                  onClick={() =>
                      navigate('/')
