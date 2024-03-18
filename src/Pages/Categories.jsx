@@ -11,7 +11,7 @@ export default function Categories(props) {
                     <h2 className={"sponsor-title text-3xl"}>
                         Kültür - Sanat
                     </h2>
-                    <div className={"text-[14px] bg-gray-300 bg-opacity-60 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p"}>
+                    <div className={"text-[14px] bg-gray-300 bg-opacity-50 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p"}>
                         <p>Albüm</p>
                         <p>Çıkış Yapan Oyuncu (K/E)</p>
                         <p>Çıkış Yapan Müzisyen (K/E)</p>
@@ -43,7 +43,7 @@ export default function Categories(props) {
                         <h2 className={"sponsor-title text-3xl"}>
                             Mühendislik
                         </h2>
-                                            <div className={"text-[14px] bg-gray-300 bg-opacity-60 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p"}>
+                                            <div className={"text-[14px] bg-gray-300 bg-opacity-50 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p"}>
 
                             <p>Elektronik</p>
                             <p>Enerji</p>
@@ -63,7 +63,7 @@ export default function Categories(props) {
                         <h2 className={"sponsor-title text-3xl"}>
                         Spor
                         </h2>
-                                            <div className={"text-[14px] bg-gray-300 bg-opacity-60 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p"}>
+                                            <div className={"text-[14px] bg-gray-300 bg-opacity-50 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p"}>
 
                             <p>Onur Ödülleri</p>
                         </div>
@@ -73,7 +73,7 @@ export default function Categories(props) {
                         <h2 className={"sponsor-title text-3xl"}>
                             Bilim
                         </h2>
-                                            <div className={"text-[14px] bg-gray-300 bg-opacity-60 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p"}>
+                                            <div className={"text-[14px] bg-gray-300 bg-opacity-50 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p"}>
 
 
                             <p>Onur Ödülleri</p>
@@ -85,7 +85,7 @@ export default function Categories(props) {
                         Yönetim - Finans
                     </h2>
                     <div
-                        className={"flex text-[14px] bg-gray-300 bg-opacity-60 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p h-full flex-col items-center justify-center"}>
+                        className={"flex text-[14px] bg-gray-300 bg-opacity-50 w-full rounded-xl font-bold shadow-2xl py-2 tracking-[.08rem] grayer-p h-full flex-col items-center justify-center"}>
                         <p>Bankacılık</p>
                         <p>Çevreci Şirket</p>
                         <p>Dayanıklı Tüketim</p>
