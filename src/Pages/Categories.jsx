@@ -7,7 +7,7 @@ export default function Categories(props) {
                 ÖDÜL KATEGORİLERİ
             </BigHeader>
             <div className={"flex flex-wrap w-full text-center"}>
-                <div className={"flex flex-col w-1/3 p-2 justify-center"}>
+                <div className={"flex flex-col w-full md:w-1/3 p-2 justify-center"}>
                     <h2 className={"sponsor-title text-3xl"}>
                         Kültür - Sanat
                     </h2>
@@ -38,7 +38,7 @@ export default function Categories(props) {
                         <p>Youtuber</p>
                     </div>
                 </div>
-                <div className={"flex flex-row lg:flex-col w-1/3 p-2 justify-center gap-y-2 justify-between"}>
+                <div className={"flex flex-col w-full md:w-1/3 p-2 gap-y-2 justify-between"}>
                     <div>
                         <h2 className={"sponsor-title text-3xl"}>
                             Mühendislik
@@ -80,7 +80,7 @@ export default function Categories(props) {
                         </div>
                     </div>
                 </div>
-                <div className={"flex flex-col w-1/3 p-2 justify-center min-h-max"}>
+                <div className={"flex flex-col w-full md:w-1/3 p-2 justify-center min-h-max"}>
                     <h2 className={"sponsor-title text-3xl"}>
                         Yönetim - Finans
                     </h2>
