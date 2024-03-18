@@ -14,9 +14,10 @@ const Communities = (props) => {
 
                 <div className={"flex flex-row items-center justify-center gap-4 md:my-12 flex-wrap"}>
                     {COMMUNITIES_LIST.map((community, key) => (
-                        <div key={key} className={"p-3 w-[175px] bg-white bg-opacity-90 rounded-2xl shadow-xl hover:bg-opacity-100 hover:scale-110 duration-500 transition-all"}>
+                        <div key={key} className={"p-3 w-[175px] h-[175px] bg-white bg-opacity-90 rounded-2xl shadow-xl hover:bg-opacity-100 hover:scale-110 duration-500 transition-all"}>
                             <img src={`/images/communitylogos/${community.img}`} alt={community.title}
-                                 className={"h-[175px]"}/>
+                                className={"w-full h-full object-contain"}
+                            />
                         </div>
                     ))}
                 </div>
