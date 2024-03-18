@@ -1,12 +1,25 @@
 import BigHeader from "../Components/Headers/BigHeader";
 import NumberSection from "../Components/About/NumberSection";
 import Navbar from "../Components/Navbar";
+import Categories from "./Categories";
+import {useEffect, useState} from "react";
 
 const About = (props) => {
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+        // get scroll position in px and listen to scroll event, if scroll is bigger than 100px change scroll to true
+        const scrollHandler = () => {
+            window.scrollY > 100 ? setScroll(true) : setScroll(false);
+        }
+        window.addEventListener('scroll', scrollHandler);
+        return () => window.removeEventListener('scroll', scrollHandler);
+    }, []);
+
     return (
         <>
             <Navbar/>
-            <div className={"flex flex-col items-center justify-center min-h-dvh px-12 lg:px-24 py-24"} id={props.name}>
+            <div className={"flex flex-col items-center justify-center min-h-dvh px-12 lg:px-24 pt-12"} id={props.name}>
                 <BigHeader>
                     Hakkımızda
                 </BigHeader>
@@ -40,7 +53,13 @@ const About = (props) => {
                     </p>
                 </p>
                 <NumberSection/>
+                <div className={"mt-10 transition-opacity duration-500" + (!scroll ? ' opacity-100' : ' opacity-0 h-[1px]')}>
+                    <BigHeader>
+                        ÖDÜL KATEGORİLERİ
+                    </BigHeader>
+                </div>
             </div>
+            <Categories name={"categories"}/>
         </>
     )
 }

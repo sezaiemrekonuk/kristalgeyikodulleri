@@ -141,3 +141,31 @@
     left: 0;
     z-index: 20;
 }
+
+.grayer-p > p {
+    font-weight: lighter;
+    color: #e5e5e5;
+    text-shadow: black 0px 1px 0px;
+}
+
+.animate-fadeOut {
+    animation: fadeOut ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.animate-none {
+    animation: none;
+}
