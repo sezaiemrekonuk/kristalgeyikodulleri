@@ -15,7 +15,7 @@ const FAQ = (props) => {
     return (
         <>
             <Navbar/>
-            <div id={props.name} className={"flex justify-center items-center flex-col min-h-dvh pt-20 md:mx-28 mx-10"}>
+            <div id={props.name} className={"flex justify-center items-center flex-col min-h-dvh pt-24 md:mx-28 mx-10"}>
                 <BigHeader>
                     Sıkça Sorulan Sorular
                 </BigHeader>

@@ -19,7 +19,7 @@ const About = (props) => {
     return (
         <>
             <Navbar/>
-            <div className={"flex flex-col items-center justify-center min-h-dvh px-12 lg:px-24 pt-12"} id={props.name}>
+            <div className={"flex flex-col items-center justify-center min-h-dvh px-12 lg:px-24 pt-24 md:pt-12"} id={props.name}>
                 <BigHeader>
                     Hakkımızda
                 </BigHeader>

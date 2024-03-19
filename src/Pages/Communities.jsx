@@ -7,7 +7,7 @@ const Communities = (props) => {
         <>
             <Navbar/>
             <div id={props.name}
-                 className={"flex justify-center items-center flex-col min-h-dvh px-10 md:px-44 pt-20 gap-y-10 md:gap-y-12 "}>
+                 className={"flex justify-center items-center flex-col min-h-dvh px-10 md:px-44 pt-24 gap-y-10 md:gap-y-12 "}>
                 <BigHeader>
                     Paydaşlarımız
                 </BigHeader>

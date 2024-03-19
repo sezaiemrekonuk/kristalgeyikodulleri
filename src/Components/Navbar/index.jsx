@@ -72,7 +72,6 @@ const Navbar = ({transparent = false}) => {
                                                  className="flex flex-row items-center hover:cursor-pointer border-b-gray-500 border-b">
                                                 <button
                                                     className="tracking-[.12rem] hover:tracking-[.16rem] transition-all text-black"
-                                                    onClick={() => onClickScroll(NAVBAR_ITEMS[item])}
                                                 >{item}</button>
                                             </div>
                                         )
