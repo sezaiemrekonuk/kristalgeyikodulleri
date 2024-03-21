@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 
-const CustomSlider = ({prefix, length}) => {
+const CustomSlider = ({prefix, length, isJPG = false}) => {
     let settings = {
         dots: true,
         infinite: true,
@@ -13,7 +13,7 @@ const CustomSlider = ({prefix, length}) => {
         autoplay: true,
         autoplaySpeed: 4000,
         arrows: true,
-        className: "lg:px-6 flex",
+        className: "lg:px-6 flex items-center",
         responsive: [
             {
                 breakpoint: 1024,
@@ -32,7 +32,7 @@ const CustomSlider = ({prefix, length}) => {
             {
                 length?.map((path, key) => {
                     return (
-                        <img src={`/images/${prefix}/${path}.png`} alt={prefix} className={"w-full h-full object-cover p-2"}/>
+                        <img src={`/images/${prefix}/${path}.${isJPG ? 'jpg' : 'png'}`} alt={prefix} className={"w-full h-full object-contain p-2 max-h-[500px]"}/>
                     )
                 })
             }
