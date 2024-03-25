@@ -3,9 +3,26 @@ import Countdown from "react-countdown";
 import Navbar from "../Components/Navbar";
 import bgImage from "../images/background.png";
 import bgVideo from "../images/backgroundvideo.webm";
+import {useEffect, useState} from "react";
 
 
-export default (props) => {
+export default function App(props){
+    const [date, setDate] = useState(new Date());
+
+    useEffect(() => {
+        // Create a date object for May 9th, 2024
+        const targetDate = new Date(2024, 4, 9); // Year, Month (0-indexed), Day
+
+        // Adjust for GMT+3 timezone (add 3 hours in milliseconds)
+        targetDate.setTime(targetDate.getTime() + 3 * 60 * 60 * 1000);
+
+        // convert to timestamp
+        const targetTimestamp = targetDate.getTime();
+
+        setDate(targetTimestamp);
+    }, []);
+
+
     return (
         <>
             <div
@@ -18,20 +35,15 @@ export default (props) => {
             <div className='overflow-hidden w-dvw h-dvh flex justify-center items-center flex-col gap-6'
                  id={props.name}>
                 <img src={largeLogo} alt="" className='h-[12rem] md:h-[16rem] lg:h-[20rem]'/>
-                {props.counter && (
                     <div className={`flex flex-col items-center justify-center gap-4 relative overflow-hidden`}>
                         <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold text-[#ffffff] opacity-90 ${!props.isLoaded && ' disappear'}`}>Oylamaya
                             Son</h2>
                         <div className={`${!props.isLoaded && 'smooth-appear'}`}>
-                            <Countdown date={new Date(2024, 5, 9)} renderer={renderer} precision={3}/>
+                            <Countdown date={date} renderer={renderer} precision={0} />
                         </div>
                     </div>
-                )}
                 <p className='text-lg tracking-[.16rem]'>#senin<b>secimin</b></p>
-
-
             </div>
-
         </>
     )
 }
@@ -43,7 +55,7 @@ const Completionist = () => <span className={
 </span>;
 
 // Renderer callback with condition
-const renderer = ({hours, minutes, seconds, completed}) => {
+const renderer = ({hours, minutes, seconds, days, completed}) => {
     if (completed) {
         // Render a completed state
         return <Completionist/>;
@@ -51,6 +63,6 @@ const renderer = ({hours, minutes, seconds, completed}) => {
         // Render a countdown
         return <span className={
             `text-1xl md:text-2xl lg:text-3xl font-bold text-[#ffffff] opacity-90 italic`
-        }>{hours} Gün {minutes} Dakika {seconds} Saniye</span>;
+        }>{days} Gün {hours} Saat {minutes} Dakika {seconds} Saniye</span>;
     }
 };
