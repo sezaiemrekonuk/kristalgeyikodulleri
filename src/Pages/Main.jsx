@@ -23,7 +23,7 @@ export default (props) => {
                         <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold text-[#ffffff] opacity-90 ${!props.isLoaded && ' disappear'}`}>Oylamaya
                             Son</h2>
                         <div className={`${!props.isLoaded && 'smooth-appear'}`}>
-                            <Countdown date={new Date(2024, 3, 28)} renderer={renderer} precision={3}/>
+                            <Countdown date={new Date(2024, 5, 9)} renderer={renderer} precision={3}/>
                         </div>
                     </div>
                 )}
