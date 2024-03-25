@@ -36,8 +36,7 @@ export default function App(props){
                  id={props.name}>
                 <img src={largeLogo} alt="" className='h-[12rem] md:h-[16rem] lg:h-[20rem]'/>
                     <div className={`flex flex-col items-center justify-center gap-4 relative overflow-hidden`}>
-                        <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold text-[#ffffff] opacity-90 ${!props.isLoaded && ' disappear'}`}>Oylamaya
-                            Son</h2>
+                        <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold text-[#ffffff] opacity-90 ${!props.isLoaded && ' disappear'}`}>VI.Kristal Geyik Ödülleri'ne Son</h2>
                         <div className={`${!props.isLoaded && 'smooth-appear'}`}>
                             <Countdown date={date} renderer={renderer} precision={0} />
                         </div>
