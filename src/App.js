@@ -5,6 +5,7 @@ import bgImage from './images/background.png';
 import Socials from "./Components/Socials";
 import FullScreenLoader from "./Components/FullScreenLoader";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {SpeedInsights} from "@vercel/speed-insights/react";
 
 
 const Main = React.lazy(() => import('./Pages/Main'));
@@ -82,6 +83,7 @@ export default function App() {
         {loading && <FullScreenLoader/>}
 
         <Socials/>
+        <SpeedInsights/>
 
 
         <div className={"fixed -z-20 flex items-center justify-center object-contain"}>
