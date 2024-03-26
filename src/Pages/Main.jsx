@@ -7,22 +7,6 @@ import {useEffect, useState} from "react";
 
 
 export default function App(props){
-    const [date, setDate] = useState(new Date());
-
-    useEffect(() => {
-        // Create a date object for May 9th, 2024
-        const targetDate = new Date(2024, 4, 9); // Year, Month (0-indexed), Day
-
-        // Adjust for GMT+3 timezone (add 3 hours in milliseconds)
-        targetDate.setTime(targetDate.getTime() + 3 * 60 * 60 * 1000);
-
-        // convert to timestamp
-        const targetTimestamp = targetDate.getTime();
-
-        setDate(targetTimestamp);
-    }, []);
-
-
     return (
         <>
             <div
@@ -38,7 +22,7 @@ export default function App(props){
                     <div className={`flex flex-col items-center justify-center gap-4 relative overflow-hidden`}>
                         <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold text-[#ffffff] opacity-90 ${!props.isLoaded && ' disappear'}`}>VI.Kristal Geyik Ödülleri'ne Son</h2>
                         <div className={`${!props.isLoaded && 'smooth-appear'}`}>
-                            <Countdown date={date} renderer={renderer} precision={0} />
+                            <Countdown date={new Date(2024, 4, 9)} renderer={renderer} precision={10} />
                         </div>
                     </div>
                 <p className='text-lg tracking-[.16rem]'>#senin<b>secimin</b></p>
