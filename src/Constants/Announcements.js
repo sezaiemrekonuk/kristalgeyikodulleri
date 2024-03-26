@@ -17,7 +17,7 @@ export const ANNOUNCEMENTS = [
     },
     {
         title: "KGÖ’24 PAYDAŞLARI KARŞINIZDA!",
-        content: "<p>Ve karşınızda 2023 - 2024 dönemi Kristal Geyik Ödülleri organizasyon komitesi öğrenci toplulukları!🦌✨</p><p>Aramıza yeni katılan <a href='https://www.instagram.com/hukultursanat/'>@hukultursanat</a>‘a hoş geldin diyoruz.</p><a href='https://www.instagram.com/explore/tags/seninse%C3%A7imin/'>#seninseçimin</a>",
+        content: "<p>Ve karşınızda 2023 - 2024 dönemi Kristal Geyik Ödülleri organizasyon komitesi öğrenci toplulukları!🦌✨</p><p> <a class='text-rose-500 font-bold' href='https://www.instagram.com/explore/tags/seninse%C3%A7imin/'>#seninseçimin</a></p>",
         redirect: "https://www.instagram.com/p/C3DcnSSNCRf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         postDate: "2024-02-07",
         postImage: "/images/announcements/KGÖ Topluluklarımız.png",
@@ -25,7 +25,7 @@ export const ANNOUNCEMENTS = [
     },
     {
         title: "KGÖ’24 HİKAYESİ İLE KARŞINIZDA!",
-        content: "<p>Kristal Geyik Ödülleri, hikayesi ile sizlerle!✨🦌 <a href='www.kristalgeyikodulleri.com/hikayemiz' class='font-bold text-cyan-400 underline'>www.kristalgeyikodulleri.com/hikayemiz</a></p>",
+        content: "<p>Kristal Geyik Ödülleri, hikayesi ile sizlerle!✨🦌</p>",
         redirect: "https://www.instagram.com/reel/C43cLYhNK6Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         postDate: "2024-03-23",
         postImage: false,
@@ -43,7 +43,7 @@ export const ANNOUNCEMENTS = [
         title: "KRİSTAL GEYİK ÖDÜLLERİ YENİ ÖDÜL TASARIMI İLE SİZLERLE",
         content: "<p>Hikayesi ile bütünleşen Kristal Geyik Ödülleri, yenilenen ödül tasarımıyla sahipleri ile buluşmayı bekliyor!✨🦌</p>",
         redirect: "https://www.instagram.com/reel/C43cLYhNK6Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-        postDate: "2024-03-02",
+        postDate: "2024-03-23",
         postImage: "/images/announcements/Tasarım.mp4",
         type: "video"
     }
