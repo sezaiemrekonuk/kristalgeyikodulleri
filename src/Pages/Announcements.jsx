@@ -14,7 +14,7 @@ const Announcements = (props) => {
                     Duyurular
                 </BigHeader>
                 <div className="flex flex-wrap gap-12 items-center justify-center">
-                    {ANNOUNCEMENTS.map((announcement, index) => {
+                    {ANNOUNCEMENTS.sort((a, b) => new Date(b.postDate) - new Date(a.postDate)).map((announcement, index) => {
                         return (
                             <Announcement key={index} announcement={announcement}/>
                         );
