@@ -79,7 +79,7 @@ export default function App() {
     }, []);
 
 
-    return (<div className={"overflow-hidden"}>
+    return (<div className={"overflow-x-hidden"}>
 
         {loading && <FullScreenLoader/>}
 

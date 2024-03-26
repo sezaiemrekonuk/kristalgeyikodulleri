@@ -16,8 +16,7 @@ const Announcements = (props) => {
                 <div className="flex flex-wrap gap-12 items-center justify-center">
                     {ANNOUNCEMENTS.map((announcement, index) => {
                         return (
-                            <Announcement key={index} title={announcement.title} content={announcement.content}
-                                          date={"15.12.2024"}/>
+                            <Announcement key={index} announcement={announcement}/>
                         );
                     })}
                 </div>

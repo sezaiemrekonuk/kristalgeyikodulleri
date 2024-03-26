@@ -1,22 +1,50 @@
 export const ANNOUNCEMENTS = [
     {
-        title: "Announcement 1",
-        content: "This is the first announcement"
+        title: "KGÖ’24 TANITIM VİDEOSU KARŞINIZDA!",
+        content: "<p>Yılın En’lerinin #seninsecimin ile belirleneceği ödül törenine sayılı günler kaldı! ✨</p> <p> 5 ayrı kategoride, 50’den fazla ödülün sahipleri ile buluşacağı büyük günde Tunçalp Özgen Kongre ve Kültür Merkezi’nde buluşacağız. 🦌</p> <p> Yılın En’leriyle buluşmak için Mayıs 2024’ü bekleyin!</p>",
+        redirect: "https://www.instagram.com/reel/C402huGtvi1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        postDate: "2024-03-22",
+        postImage: false,
+        type: "video"
     },
     {
-        title: "Announcement 2",
-        content: "This is the second announcement"
+        title: "KGÖ’24 ADAYLARINI BELİRLİYOR!",
+        content: "<p>Hacettepe Üniversitesi öğrencileri özelinde yapılan anket ve oylamalarda yılın en iyilerinin belirlendiği Kristal Geyik Ödülleri’nin adayları #seninseçimin ile belirleniyor.</p>",
+        redirect: "https://www.instagram.com/reel/C2FhdIwN6Cd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        postDate: "2024-01-14",
+        postImage: false,
+        type: false
     },
     {
-        title: "Announcement 3",
-        content: "This is the third announcement"
+        title: "KGÖ’24 PAYDAŞLARI KARŞINIZDA!",
+        content: "<p>Ve karşınızda 2023 - 2024 dönemi Kristal Geyik Ödülleri organizasyon komitesi öğrenci toplulukları!🦌✨</p><p>Aramıza yeni katılan <a href='https://www.instagram.com/hukultursanat/'>@hukultursanat</a>‘a hoş geldin diyoruz.</p><a href='https://www.instagram.com/explore/tags/seninse%C3%A7imin/'>#seninseçimin</a>",
+        redirect: "https://www.instagram.com/p/C3DcnSSNCRf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        postDate: "2024-02-07",
+        postImage: "/images/announcements/KGÖ Topluluklarımız.png",
+        type: "image"
     },
     {
-        title: "Announcement 4",
-        content: "This is the fourth announcement"
+        title: "KGÖ’24 HİKAYESİ İLE KARŞINIZDA!",
+        content: "<p>Kristal Geyik Ödülleri, hikayesi ile sizlerle!✨🦌 <a href='www.kristalgeyikodulleri.com/hikayemiz' class='font-bold text-cyan-400 underline'>www.kristalgeyikodulleri.com/hikayemiz</a></p>",
+        redirect: "https://www.instagram.com/reel/C43cLYhNK6Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        postDate: "2024-03-23",
+        postImage: false,
+        type: false
     },
     {
-        title: "Announcement 5",
-        content: "This is the fifth announcement"
+        title: "KGÖ’24 ORGANİZASYON KOMİTESİ SİZLERLE!",
+        content: "<p>Yılın En’lerini belirleyeceğimiz Kristal Geyik Ödülleri Organizasyon Komitemiz Sizlerle! ❤️</p> <p>Paydaşlarımıza, 6. Dönem Organizasyon Komitemize, Tasarım&Yazılım Ekibimize ve Organizasyon Komitesi Üst Yönetim Kurulumuza teşekkür ederiz. 🦌✨</p>",
+        redirect: "https://www.instagram.com/p/C4vxslhtIPf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        postDate: "2024-03-20",
+        postImage: false,
+        type: false
+    },
+    {
+        title: "KRİSTAL GEYİK ÖDÜLLERİ YENİ ÖDÜL TASARIMI İLE SİZLERLE",
+        content: "<p>Hikayesi ile bütünleşen Kristal Geyik Ödülleri, yenilenen ödül tasarımıyla sahipleri ile buluşmayı bekliyor!✨🦌</p>",
+        redirect: "https://www.instagram.com/reel/C43cLYhNK6Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        postDate: "2024-03-02",
+        postImage: "/images/announcements/Tasarım.mp4",
+        type: "video"
     }
 ]
