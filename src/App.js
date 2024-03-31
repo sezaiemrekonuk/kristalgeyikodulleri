@@ -21,6 +21,7 @@ const FAQ = React.lazy(() => import('./Pages/FAQ'));
 const Contact = React.lazy(() => import('./Pages/Contact'));
 const Communities = React.lazy(() => import('./Pages/Communities'));
 const OurStory = React.lazy(() => import('./Pages/OurStory'));
+const VoteApp = React.lazy(() => import('./Pages/vote/VoteApp'));
 
 
 export default function App() {
@@ -68,7 +69,12 @@ export default function App() {
         }, {
             path: '/iletisim',
             element: <Suspense fallback={<FullScreenLoader/>}><Contact name="iletisim"/></Suspense>
-        },])
+        },
+        {
+            path: '/oylama',
+            element: <Suspense fallback={<FullScreenLoader/>}><VoteApp/></Suspense>
+        }
+    ])
 
 
 
