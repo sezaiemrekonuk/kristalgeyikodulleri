@@ -46,5 +46,13 @@ export const ANNOUNCEMENTS = [
         postDate: "2024-03-23",
         postImage: "/images/announcements/Tasarım.mp4",
         type: "video"
+    },
+    {
+        title: "VI.Kristal Geyik Ödülleri Adaylarımız!",
+        content: "<p>MÜHENDİSLİK, YÖNETİM-FİNANS ve KÜLTÜR SANAT KATEGORİSİ ADAYLARI KARŞINIZDA!✨</p><p>VI. Kristal Geyik Ödülleri, 9 Mayıs 2024’te Tunçalp Özgen Kongre ve Kültür Merkezi’nde sizlerle!</p><p>Yılın En’lerini belirlemek için bizleri takipte kalın.🦌❤</p><p>Tüm adaylarımız için Instagram hesabımızı ziyaret edebilirsiniz:</p><a href=\"https://www.instagram.com/kristalgeyikodulleri/\" target=\"_blank\">instagram/kristalgeyikodulleri</a>",
+        redirect: "",
+        postDate: "2024-04-08",
+        postImage: false,
+        type: false
     }
 ]
