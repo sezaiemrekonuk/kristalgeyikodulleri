@@ -20,7 +20,7 @@ export default function App(props) {
                 id={props.name}>
                 <img src={largeLogo} alt="" className='h-[12rem] md:h-[16rem] lg:h-[20rem]' />
                 <div className={`flex flex-col items-center justify-center gap-4 relative overflow-hidden`}>
-                    <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold !hover:opacity-100 text-[#ffffff] opacity-90 ${!props.isLoaded && ' disappear'}`}><a href='https://form.jotform.com/240972880319969' target='_blank' referrerPolicy='no-referrer'>Oylamaya gitmek için tıkayınız.</a></h2>
+                    <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold !hover:opacity-100 text-[#ffffff] opacity-90 ${!props.isLoaded && ' disappear'}`}><a href='https://form.jotform.com/240972880319969' target='_blank' referrerPolicy='no-referrer'>Oylamaya gitmek için tıklayınız.</a></h2>
                     <div className={`${!props.isLoaded && 'smooth-appear'}`}>
                         {/* <Countdown date={new Date(2024, 4, 9)} renderer={renderer} precision={10} /> */}
                     </div>
