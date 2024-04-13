@@ -2,7 +2,7 @@ import BigHeader from "../Components/Headers/BigHeader";
 import NumberSection from "../Components/About/NumberSection";
 import Navbar from "../Components/Navbar";
 import Categories from "./Categories";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 const About = (props) => {
     const [scroll, setScroll] = useState(false);
@@ -18,7 +18,7 @@ const About = (props) => {
 
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <div className={"flex flex-col items-center justify-center min-h-dvh px-12 lg:px-24 pt-30 md:pt-12"} id={props.name}>
                 <BigHeader>
                     Hakkımızda
@@ -52,14 +52,14 @@ const About = (props) => {
                         Özgen Kongre ve Kültür Merkezi’nde gerçekleştirilecektir.
                     </p>
                 </p>
-                <NumberSection/>
+                <NumberSection />
                 <div className={"mt-10 transition-opacity duration-500" + (!scroll ? ' opacity-100' : ' opacity-0 h-[1px]')}>
                     <BigHeader>
                         ÖDÜL KATEGORİLERİ
                     </BigHeader>
                 </div>
             </div>
-            <Categories name={"categories"}/>
+            <Categories name={"categories"} />
         </>
     )
 }
