@@ -1,3 +1,5 @@
+import { redirect } from "react-router-dom";
+
 export const ANNOUNCEMENTS = [
     {
         title: "KGÖ’24 TANITIM VİDEOSU KARŞINIZDA!",
@@ -54,5 +56,45 @@ export const ANNOUNCEMENTS = [
         postDate: "2024-04-08",
         postImage: false,
         type: false
+    },
+    {
+        title: "MÜHENDİSİLİK ANA KATEGORİSİ KAZANANLARI KARŞINIZDA!✨",
+        content: "<p>Hacettepe Üniversitesi Kristal Geyik Ödülleri, 9 Mayıs 2024 Perşembe Günü Tunçalp Özgen Kongre ve Kültür Merkezi'nde!❤️</p><p>#hacettepeüniversitesi #kristalgeyiködülleri #seninseçimin</p>",
+        redirect: "https://www.instagram.com/kristalgeyikodulleri?igsh=MWMwcmZ1NWJzemZobg==",
+        postDate: "2024-04-26",
+        postImage: "images/announcements/kgomuhendislikkazanan.png",
+        type: "image"
+    },
+    {
+        title: "Hacettepe Üniversitesi Kristal Geyik Ödülleri Dışarıdan Katılım Formu",
+        content: "<p>Bu sene 6.sı düzenlenecek olan Kristal Geyik Ödülleri Organizasyonunda dışarıdan katılım sağlayabilmek için biyografi'de bulunan link üzerinden kayıt olabilirsiniz. ✨🦌</p><p>9 Mayıs'ta görüşmek üzere!❤️</p><p>#kristalgeyikodulleri #seninsecimin</p>",
+        redirect: "forms.gle/mGwCzeUPBzE1SgKn8",
+        postDate: "2024-04-26",
+        postImage: false,
+        type: false
+    },
+    {
+        title: "BEKLENEN GÜN GELDİ!",
+        content: "<p>5 ana kategoride 50’den fazla ödülün verileceği bu görkemli geceye sen de davetlisin! 🦌❤️</p><p>Kristal Geyik Ödülleri, 9 Mayıs’ta saat 15.00’da Tunçalp Özgen Kongre ve Kültür Merkezi’nde sizlerle! ✨</p><p>#seninsecimin #kristalgeyiködülleri</p>",
+        redirect: "https://www.instagram.com/kristalgeyikoduulleri/",
+        postDate: "2024-04-27",
+        postImage: "images/announcements/genelafis.png",
+        type: "image"
+    },
+    {
+        title: "HACETTEPE ÜNİVERSİTESİ  KRİSTAL GEYİK ÖDÜLLERİ GENEL KURUL TOPLANTISI DUYURUSU",
+        content: "<h3>BEKLENEN GÜN GELDİ!</h3><p>5 ana kategoride 50’den fazla ödülün verileceği bu görkemli geceye sen de davetlisin! 🦌❤️</p><p>Kristal Geyik Ödülleri, 9 Mayıs’ta saat 15.00’da Tunçalp Özgen Kongre ve Kültür Merkezi’nde sizlerle! ✨</p><p>#kristalgeyikodulleri #seninsecimin</p>",
+        redirect: "https://www.instagram.com/p/C588t7UN4Bb/?igsh=dTR6Z3FvMXNhcHg3",
+        postDate: "2024-04-19",
+        postImage: "images/announcements/genelkurul.png",
+        type: "image"
+    },
+    {
+        title: "YÖNETİM-FİNANS ANA KATEGORİSİ KAZANANLARI KARŞINIZDA!",
+        content: "<p>Hacettepe Üniversitesi Kristal Geyik Ödülleri, 9 Mayıs 2024 Perşembe Günü Tunçalp Özgen Kongre ve Kültür Merkezi'nde!❤️</p><p>#hacettepeuniversitesi #kristalgeyikodulleri #seninsecimin</p>",
+        redirect: "https://www.instagram.com/kristalgeyikodulleri?igsh=MWMwcmZ1NWJzemZobg==",
+        postDate: "2024-04-27",
+        postImage: "images/announcements/yonfin.png",
+        type: "image"
     }
 ]
